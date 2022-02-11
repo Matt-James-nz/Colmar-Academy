@@ -12,6 +12,16 @@ a {
   text-decoration-line: none;
 }
 
+img {
+  height: auto;
+  width: 100%;
+}
+
+section {
+  display: flex;
+  border: 1px solid grey;
+}
+
 .left_box {
   width: 60%;
   margin: 32px 24px;
@@ -23,16 +33,14 @@ a {
   width: 40%;
   margin: auto 24px;
   height: auto;
-  display: inline-block;
-}
-
-img {
-  height: auto;
-  width: 100%;
-}
-
-section {
   display: flex;
+  flex-direction: column;
+}
+
+.right_box img {
+  width: 35%;
+  height: auto;
+  margin: 16px;
 }
 
 /* Header */
@@ -96,4 +104,20 @@ header li {
 .button a {
   color: white;
   margin: 8px auto;
+}
+
+/* Information */
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.horizontal a {
+  color: blue;
+}
+
+.horizontal:hover {
+  background-color: grey;
 }
