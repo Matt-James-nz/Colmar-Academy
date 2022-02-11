@@ -1,0 +1,60 @@
+/* Whole Dcument */
+
+ul {
+  list-style-type: none;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+a {
+  color: grey;
+  text-decoration-line: none;
+}
+
+/* Header */
+
+header {
+  box-sizing: content-box;
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 1;
+}
+
+#header {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 32px;
+}
+
+#header img {
+  height: 100%;
+  width: auto;
+}
+
+h1 {
+line-height: 32px;
+margin: auto 0;
+}
+/* 
+nav {
+} */
+
+h1 span {
+  color: grey;
+}
+
+header li {
+  margin-left: 16px;
+}
+
+
+/* Header mobile */
