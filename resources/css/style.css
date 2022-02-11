@@ -12,6 +12,29 @@ a {
   text-decoration-line: none;
 }
 
+.left_box {
+  width: 60%;
+  margin: 32px 24px;
+  height: auto;
+  display: inline-block;
+}
+
+.right_box {
+  width: 40%;
+  margin: auto 24px;
+  height: auto;
+  display: inline-block;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+section {
+  display: flex;
+}
+
 /* Header */
 
 header {
@@ -58,3 +81,19 @@ header li {
 
 
 /* Header mobile */
+
+/* Banner */
+
+#banner {
+  background-color: grey;
+}
+
+.button {
+  background-color: black;
+  text-align: center;
+}
+
+.button a {
+  color: white;
+  margin: 8px auto;
+}
