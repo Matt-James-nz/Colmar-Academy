@@ -17,6 +17,11 @@ img {
   width: 100%;
 }
 
+video {
+  height: auto;
+  width: 100%;
+}
+
 section {
   display: flex;
   border: 1px solid grey;
@@ -31,14 +36,14 @@ h2 {
 
 .left_box {
   width: 60%;
-  margin: 32px 24px;
+  margin: 32px 8px 32px 24px;
   height: auto;
   display: inline-block;
 }
 
 .right_box {
   width: 40%;
-  margin: auto 24px;
+  margin: 16px 8px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -138,7 +143,7 @@ header li {
 #courses_section {
   display: block;
   background-color: grey;
-  padding: 0 72px;
+  padding: 0 56px;
 }
 
 #courses {
@@ -146,9 +151,20 @@ header li {
   flex-flow: row wrap;
   row-gap: 32px;
   column-gap: 32px;
+  justify-content: center;
 }
 
 #courses div {
-  width: 33%;
+  width: 30%;
   background-color: white;
+}
+
+/* Thesis */
+
+#thesis_section {
+  display: block;
+}
+
+#thesis {
+  display: flex;
 }
