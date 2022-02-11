@@ -168,3 +168,20 @@ header li {
 #thesis {
   display: flex;
 }
+
+/* Footer */
+
+footer {
+  margin: 16px 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer ul {
+  margin: 0;
+}
