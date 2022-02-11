@@ -20,6 +20,13 @@ img {
 section {
   display: flex;
   border: 1px solid grey;
+  padding: 32px;
+}
+
+h2 {
+  margin: 32px 0;
+  text-align: center;
+  width: 100%;
 }
 
 .left_box {
@@ -96,6 +103,10 @@ header li {
   background-color: grey;
 }
 
+#banner h2 {
+  margin-bottom: 24px;
+}
+
 .button {
   background-color: black;
   text-align: center;
@@ -120,4 +131,24 @@ header li {
 
 .horizontal:hover {
   background-color: grey;
+}
+
+/* Courses */
+
+#courses_section {
+  display: block;
+  background-color: grey;
+  padding: 0 72px;
+}
+
+#courses {
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 32px;
+  column-gap: 32px;
+}
+
+#courses div {
+  width: 33%;
+  background-color: white;
 }
