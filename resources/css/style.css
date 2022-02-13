@@ -42,26 +42,42 @@ h2 {
   margin: 16px;
 }
 
+.horizontal {
+  margin: 16px;
+}
+
+/* Desktop classes */
+
 @media only screen and (min-width: 480px) {
-.left_box {
-  width: 60%;
-  margin: 32px 8px 32px 24px;
-  height: auto;
-  display: inline-block;
-}
-
-.right_box {
-  width: 40%;
-  margin: 16px 8px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.right_box img {
-  width: 35%;
-  height: auto;
-}
+  .left_box {
+    width: 60%;
+    margin: 32px 8px 32px 24px;
+    height: auto;
+    display: inline-block;
+  }
+  
+  .right_box {
+    width: 40%;
+    margin: 16px 8px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .right_box img {
+    width: 35%;
+    height: auto;
+  }
+  
+  .horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+  }
+  
+  .mobile {
+    display: none;
+  }
 }
 /* mobile */
 
@@ -70,9 +86,21 @@ h2 {
     padding: 0;
     flex-wrap: wrap;
   }
-
+  
   h2 {
     text-align: left;
+  }
+  
+  .left_box {
+    width: 100%;
+  }
+  
+  .right_box {
+    width: 100%;
+  }
+  
+  .desktop {
+    display: none;
   }
 }
 
@@ -105,8 +133,8 @@ header {
 }
 
 h1 {
-line-height: 32px;
-margin: auto 0;
+  line-height: 32px;
+  margin: auto 0;
 }
 
 h1 span {
@@ -127,15 +155,15 @@ header li {
   #header {
     display: none;
   }
-
+  
   nav {
     display: none;
   }
-
+  
   header {
     padding: 0;
   }
-
+  
   #mobile_header {
     display: flex;
     align-items: center;
@@ -167,25 +195,10 @@ header li {
 
 /* Banner mobile */
 
-@media only screen and (max-width: 480px) {
-
-.left_box {
-  width: 100%;
-}
-
-.right_box {
-  width: 100%;
-}
-
-}
+/* @media only screen and (max-width: 480px) {
+} */
 
 /* Information */
-
-.horizontal {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-}
 
 .horizontal a {
   color: blue;
@@ -194,6 +207,11 @@ header li {
 .horizontal:hover {
   background-color: grey;
 }
+
+/* Informational mobile */
+
+/* @media only screen and (max-width: 480px) {
+} */
 
 /* Courses */
 
