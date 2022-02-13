@@ -28,7 +28,6 @@ video {
 
 section {
   display: flex;
-  border: 1px solid grey;
   padding: 32px;
 }
 
@@ -86,7 +85,7 @@ h2 {
     padding: 0;
     flex-wrap: wrap;
   }
-
+  
   .left_box {
     width: 100%;
   }
@@ -97,6 +96,10 @@ h2 {
   
   .desktop {
     display: none;
+  }
+  
+  h2 {
+    margin: 32px 0px 16px;
   }
 }
 
@@ -183,6 +186,7 @@ header li {
 .button {
   background-color: black;
   text-align: center;
+  margin: 24px 0px 32px;
 }
 
 .button a {
@@ -192,17 +196,20 @@ header li {
 
 /* Banner mobile */
 
-/* @media only screen and (max-width: 480px) {
-} */
-
-/* Information */
-
-.horizontal a {
-  color: blue;
-}
-
-.horizontal:hover {
-  background-color: grey;
+@media only screen and (max-width: 480px) {
+  #banner h2 {
+    margin-bottom: 32px;
+  }
+  
+  /* Information */
+  
+  .horizontal a {
+    color: blue;
+  }
+  
+  .horizontal:hover {
+    background-color: grey;
+  }
 }
 
 /* Informational mobile */
@@ -235,35 +242,30 @@ header li {
 /* Courses mobile */
 
 @media only screen and (max-width: 480px) {
-#courses_section {
-  padding: 0;
-  background-color: white;
-}
-
-#courses {
-  display: block;
-}
-
-#courses div {
-  width: 100%;
-  /* background-color: grey; */
-}
-
-#courses_section h2 {
-  margin: 32px 16px 16px;
-}
-
-#courses_section h3 {
-  margin: 8px 0;
-  background-color: grey;
-  padding: 16px 16px 24px 16px;
-}
-
-#courses h4,
-#courses p,
-#courses img {
-  display: none;
-}
+  #courses_section {
+    padding: 0;
+    background-color: white;
+  }
+  
+  #courses {
+    display: block;
+  }
+  
+  #courses div {
+    width: 100%;
+  }
+  
+  #courses_section h3 {
+    margin: 8px 0;
+    background-color: grey;
+    padding: 16px 16px 24px 16px;
+  }
+  
+  #courses h4,
+  #courses p,
+  #courses img {
+    display: none;
+  }
 }
 
 /* Thesis */
@@ -274,6 +276,24 @@ header li {
 
 #thesis {
   display: flex;
+}
+
+/* Thesis mobile */
+
+@media only screen and (max-width: 480px) {
+  #thesis_section {
+    margin: 32px 0 24px;
+  }
+  
+  #thesis {
+    padding-bottom: 24px;
+  }
+  
+  #thesis .right_box,
+  #thesis h3,
+  #thesis p {
+    display: none;
+  }
 }
 
 /* Footer */
@@ -292,3 +312,8 @@ footer p {
 footer ul {
   margin: 0;
 }
+
+
+/* Footer mobile */
+
+/* @media only screen and (max-width: 480px) {} */
