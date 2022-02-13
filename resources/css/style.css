@@ -1,5 +1,9 @@
 /* Whole Dcument */
 
+/* body {
+  font-family: ;
+} */
+
 ul {
   list-style-type: none;
   display: inline-flex;
@@ -34,6 +38,11 @@ h2 {
   width: 100%;
 }
 
+.right_box {
+  margin: 16px;
+}
+
+@media only screen and (min-width: 480px) {
 .left_box {
   width: 60%;
   margin: 32px 8px 32px 24px;
@@ -52,7 +61,19 @@ h2 {
 .right_box img {
   width: 35%;
   height: auto;
-  margin: 16px;
+}
+}
+/* mobile */
+
+@media only screen and (max-width: 480px) {
+  section {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  h2 {
+    text-align: left;
+  }
 }
 
 /* Header */
@@ -122,10 +143,6 @@ header li {
     flex-direction: row;
     width: 100%;
   }
-
-  #mobile_header a {
-    display: block;
-  }
 }
 
 /* Banner */
@@ -146,6 +163,20 @@ header li {
 .button a {
   color: white;
   margin: 8px auto;
+}
+
+/* Banner mobile */
+
+@media only screen and (max-width: 480px) {
+
+.left_box {
+  width: 100%;
+}
+
+.right_box {
+  width: 100%;
+}
+
 }
 
 /* Information */
